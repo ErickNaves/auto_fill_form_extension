@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dev AutoFill</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>Dev AutoFill</h2>
+
+  <div>
+    <input id="recordName" placeholder="Nome da gravação (ex: meus testes)"/>
+    <button id="btnStartRecord">🔴 Gravar</button>
+    <button id="btnStopRecord" disabled>⏹️ Parar</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <label><input type="checkbox" id="useRandom"> Usar valores aleatórios</label>
+  </div>
+
+  <div>
+    <h3>Gravações</h3>
+    <ul id="recordingsList"></ul>
+  </div>
+
+  <div>
+    <button id="btnClearAll">Apagar tudo</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

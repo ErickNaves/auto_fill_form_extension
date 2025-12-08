@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; width: 320px; padding: 12px; }
+h2 { margin: 0 0 8px; font-size: 16px; }
+input { width: calc(100% - 12px); padding: 6px; margin-bottom: 6px; }
+button { margin-right: 6px; margin-bottom: 6px; }
+ul { padding-left: 18px; }
+li { margin-bottom: 6px; }

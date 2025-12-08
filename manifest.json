@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Form Auto-Filler Recorder for Developers",
+  "description": "Record and automate form filling on web pages for developers.",
+  "version": "0.1",
+  "permissions": ["scripting", "activeTab", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "moonster.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
